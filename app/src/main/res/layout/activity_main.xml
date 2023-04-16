@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Loan Predictor App"
+            android:textAlignment="center"
+            android:textSize="30dp"></TextView>
+
+        <EditText
+            android:id="@+id/person_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Income"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Yearly Income in Rupees"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/person_home_ownership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Home Ownership"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="0: Mortgage   1: Other     2: Own     3: Rent"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/person_emp_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Employment Length"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="In Years"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/loan_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Loan Grade"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="0: A   1: B     2: C     3: D     4:E     5:F     6:G"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/loan_amnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Loan Amount"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="In Rupees"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/loan_int_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Loan Interest Rate"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="In percent %"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/loan_percent_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Loan Percent Income"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Calculate (loan/income)"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <EditText
+            android:id="@+id/cb_person_default_on_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Defaulter in Bank File or Not?"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="If previously defaulted by bank then type 1 else 0"
+            android:textAlignment="center"
+            android:textSize="10dp"></TextView>
+
+        <Button
+            android:id="@+id/predict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Predict"></Button>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="50dp"></TextView>
+    </LinearLayout>
+
+</ScrollView>
